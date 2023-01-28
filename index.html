@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <title>VolksWagen Golf</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#"><img src="img/logo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#" class="check">Linha Golf</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Loja de itens</a></li>
+                <li><a href="#">Sobre nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="img/vw1.png" alt="">
+                <h3>Design mais Veloz.</h3>
+                <p>Os modelos GTI são destaque em design futuristico e esportivo. <br> Conte com uma linda interna com seus bancos de couro com costuras coloridas além de um super motor 2.0 TURBO.</p>
+                <h6>Pesonalize seu veiculo por encomenda</h6>
+                <a href="#" class="btn">Encomendar</a>
+                <div class="text">
+                    <h5>Escolha a cor do seu novo carro:</h5>
+                </div>
+                <div class="content">
+                    <span id="white" onclick="imgSlider('img/gol-branco.png')"></span>
+                    <span id="blue" onclick="imgSlider('img/gol-azul.png')"></span>    
+                    <span id="red" onclick="imgSlider('img/golf-vermelho.png')"></span>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="img/gol-branco.png" alt="imagem do golf" id="carro">
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        /* função para mudar img*/
+        function imgSlider(e){
+            document.querySelector('#carro').src =e;
+        }
+    </script>
+</body>
+</html>
